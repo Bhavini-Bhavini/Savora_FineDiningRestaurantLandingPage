@@ -85,26 +85,50 @@ git clone https://github.com/your-username/savora-restaurant.git
 No installation or build process is required.
 
 ---
-
 ## 📸 Screenshots
 
-### Home Page
+### 🏠 Home Page
+The landing page welcomes visitors with a stunning hero banner, intuitive navigation bar, and quick access to the restaurant's menu and reservation options.
 
-_Add screenshot here_
-
-### Menu Section
-
-_Add screenshot here_
-
-### Gallery
-
-_Add screenshot here_
-
-### Contact Section
-
-_Add screenshot here_
+![Home Page](screenshots/home.png)
 
 ---
+
+### 📖 About Section
+Learn about Savora's story, passion for fine dining, and commitment to delivering unforgettable culinary experiences.
+
+![About Section](screenshots/AboutUs.png)
+
+---
+
+### 🍽️ Menu Section
+Explore our signature dishes presented as elegant cards featuring delicious food images and brief descriptions.
+
+![Menu Section](screenshots/Menu.png)
+
+---
+
+### 🖼️ Gallery Section
+A visual showcase of Savora's ambience, gourmet dishes, and memorable dining moments.
+
+![Gallery Section](screenshots/Gallery.png)
+
+---
+
+### 💬 Customer Reviews
+Discover what our customers have to say about their dining experience at Savora. The review carousel showcases genuine testimonials that highlight the quality of our food, exceptional service, and welcoming ambiance.
+
+![Customer Reviews](screenshots/CustomerReviews.png)
+
+---
+
+### 🪑 Reservation Section
+Reserve your table effortlessly by filling out the booking form and experience fine dining at Savora.
+
+![Reservation Section](screenshots/TableReservation.png)
+
+---
+
 
 ## 🌟 Key Functionalities
 
