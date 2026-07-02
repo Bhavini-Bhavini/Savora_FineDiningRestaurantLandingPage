@@ -1,0 +1,344 @@
+/* ==========================
+   GLOBAL
+========================== */
+
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    font-family: Arial, sans-serif;
+    margin:0;
+    padding:0;
+    overflow-x:hidden;
+    background:beige;
+    color:#222;
+    transition:0.4s;
+}
+
+section{
+    padding-top:80px;
+}
+
+/* ==========================
+   NAVBAR
+========================== */
+
+.navbar-brand{
+    font-size:1.5rem;
+    font-weight:bold;
+}
+
+.nav-link{
+    margin-left:12px;
+    transition:.3s;
+}
+
+/* Light Mode Navbar */
+
+body:not(.dark-mode) .navbar{
+    background:beige !important;
+}
+
+body:not(.dark-mode) .navbar-brand,
+body:not(.dark-mode) .nav-link{
+    color:#000 !important;
+}
+
+body:not(.dark-mode) .nav-link:hover,
+body:not(.dark-mode) .nav-link.active{
+    color:#ff9800 !important;
+}
+
+/* Dark Mode Navbar */
+
+body.dark-mode .navbar{
+    background:#000 !important;
+}
+
+body.dark-mode .navbar-brand,
+body.dark-mode .nav-link{
+    color:#fff !important;
+}
+
+body.dark-mode .nav-link:hover,
+body.dark-mode .nav-link.active{
+    color:#ffc107 !important;
+}
+
+/* ==========================
+   HERO
+========================== */
+
+.hero{
+    height:100vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    text-align:center;
+
+    background:
+    linear-gradient(rgba(0,0,0,.55),rgba(0,0,0,.55)),
+    url("assets/images/hero.jpg");
+
+    background-size:cover;
+    background-position:center;
+}
+
+.hero-content{
+    color:white;
+}
+
+.hero-content h1{
+    font-size:80px;
+    font-weight:bold;
+}
+
+.hero-content p{
+    font-size:30px;
+    margin:20px 0 40px;
+}
+
+.hero-buttons .btn{
+    padding:15px 35px;
+    border-radius:10px;
+    margin:10px;
+}
+
+/* ==========================
+   ABOUT
+========================== */
+
+.about-img{
+    width:100%;
+    max-width:500px;
+    height:350px;
+    object-fit:cover;
+    border-radius:20px;
+    display:block;
+    margin:auto;
+    box-shadow:0 8px 20px rgba(0,0,0,.2);
+}
+
+/* ==========================
+   MENU
+========================== */
+
+#menu-section{
+    transition:.1s;
+}
+
+/* Light */
+
+body:not(.dark-mode) #menu-section{
+    background:beige;
+    color:#222;
+}
+
+/* Dark */
+
+body.dark-mode #menu-section{
+    background:#1f1f1f;
+    color:white;
+}
+
+.menu-card{
+    border:none;
+    border-radius:18px;
+    overflow:hidden;
+    height:100%;
+    transition:.35s;
+    box-shadow:0 8px 18px rgba(0,0,0,.2);
+}
+
+.menu-card:hover{
+    transform:translateY(-8px);
+    box-shadow:0 15px 30px rgba(0,0,0,.3);
+}
+
+.menu-card img{
+    height:220px;
+    object-fit:cover;
+}
+
+.menu-card .card-body{
+    text-align:center;
+    padding:20px;
+}
+
+.menu-card h5{
+    font-weight:bold;
+}
+
+.menu-card p{
+    font-size:15px;
+    margin-bottom:12px;
+    min-height:50px;
+}
+
+.price{
+    font-size:20px;
+    font-weight:bold;
+}
+
+/* Light Cards */
+
+body:not(.dark-mode) .menu-card{
+    background:white;
+    color:#222;
+}
+
+body:not(.dark-mode) .menu-card p{
+    color:#666;
+}
+
+body:not(.dark-mode) .price{
+    color:#ff9800;
+}
+
+/* Dark Cards */
+
+body.dark-mode .menu-card{
+    background:#2d2d2d;
+    color:white;
+}
+
+body.dark-mode .menu-card p{
+    color:#d4d4d4;
+}
+
+body.dark-mode .price{
+    color:#ffc107;
+}
+
+/* ==========================
+   GALLERY
+========================== */
+
+.gallery-img{
+    width:100%;
+    aspect-ratio:1/1;
+    object-fit:cover;
+    border-radius:20px;
+    transition:.4s;
+}
+
+.gallery-img:hover{
+    transform:scale(1.05);
+}
+
+/* ==========================
+   TESTIMONIAL
+========================== */
+
+.carousel-item{
+    text-align:center;
+    padding:40px;
+}
+
+#reviews-section{
+    transition:0.1s;
+}
+
+body:not(.dark-mode) .carousel-item{
+    background:beige;
+    color:#222;
+}
+
+body.dark-mode .carousel-item{
+    background:#121212;
+    color:white;
+}
+
+/* ==========================
+   CONTACT
+========================== */
+
+form{
+    max-width:700px;
+    margin:auto;
+}
+
+form input,
+form textarea{
+    border-radius:10px;
+    padding:12px;
+}
+
+form button{
+    border-radius:30px;
+    padding:12px 30px;
+}
+
+#map{
+    width:100%;
+    height:500px;
+    border-radius:20px;
+    overflow:hidden;
+    box-shadow:0 10px 30px rgba(0,0,0,.2);
+}
+
+/* ==========================
+   FOOTER
+========================== */
+
+footer{
+    margin-top:40px;
+}
+
+footer i{
+    font-size:28px;
+    margin:10px;
+    transition:.3s;
+}
+
+footer i:hover{
+    color:#ffc107;
+}
+
+/* ==========================
+   PAGE DARK MODE
+========================== */
+
+body.dark-mode{
+    background:#121212;
+    color:white;
+}
+
+body.dark-mode #about,
+body.dark-mode #gallery,
+body.dark-mode #contact{
+    background:#121212;
+    color:white;
+}
+
+body.dark-mode footer{
+    background:#000 !important;
+}
+
+/* ==========================
+   RESPONSIVE
+========================== */
+
+@media(max-width:768px){
+
+    .hero-content h1{
+        font-size:42px;
+    }
+
+    .hero-content p{
+        font-size:20px;
+    }
+
+    .about-img{
+        height:250px;
+    }
+
+    .menu-card img{
+        height:200px;
+    }
+
+    .gallery-img{
+        height:220px;
+    }
+}
