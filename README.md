@@ -90,7 +90,7 @@ No installation or build process is required.
 ### 🏠 Home Page
 The landing page welcomes visitors with a stunning hero banner, intuitive navigation bar, and quick access to the restaurant's menu and reservation options.
 
-![Home Page](Screenshots\home.png")
+![Home Page](Screenshots/home.png")
 
 ---
 
