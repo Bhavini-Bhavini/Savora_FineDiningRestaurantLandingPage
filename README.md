@@ -133,7 +133,7 @@ Get in touch with Savora for reservations, inquiries, or special requests. Our c
 
 ![Contact Us](Screenshots/ContactUs.png)
 
----
+----
 
 ### 📍 Location & Map
 Find your way to Savora with the integrated interactive map. Easily locate our restaurant, explore nearby landmarks, and plan your visit for a seamless dining experience.
