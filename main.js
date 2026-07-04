@@ -228,34 +228,6 @@ if (contactForm) {
 
 }
 
-
-
-
-
-/* ==========================================
-   TODAY'S SPECIAL
-========================================== */
-
-const specialBadge = document.getElementById("specialBadge");
-
-if (specialBadge) {
-
-    const specials = [
-
-        "☕ Sunday Special: Caramel Latte",
-        "🥐 Monday Special: Butter Croissant",
-        "🍫 Tuesday Special: Chocolate Mocha",
-        "🧁 Wednesday Special: Blueberry Muffin",
-        "🍰 Thursday Special: Cheesecake Delight",
-        "🥪 Friday Special: Avocado Toast",
-        "🍹 Saturday Special: Hazelnut Cappuccino"
-
-    ];
-
-    specialBadge.innerHTML = specials[new Date().getDay()];
-
-}
-
 /* ==========================================
    TABLE RESERVATION FORM
 ========================================== */
