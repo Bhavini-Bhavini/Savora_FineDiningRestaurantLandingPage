@@ -131,7 +131,7 @@ Reserve your table effortlessly by filling out the booking form and experience f
 ### 📞 Contact Us
 Get in touch with Savora for reservations, inquiries, or special requests. Our contact section provides all the essential details, including phone number, email, address, and business hours, making it easy to connect with us.
 
-![Contact Us](Screenshots/Contact Us.png)
+![Contact Us](Screenshots/ContactUs.png)
 
 
 ----
