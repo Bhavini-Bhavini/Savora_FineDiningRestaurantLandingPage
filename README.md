@@ -97,7 +97,7 @@ The landing page welcomes visitors with a stunning hero banner, intuitive naviga
 ### 📖 About Section
 Learn about Savora's story, passion for fine dining, and commitment to delivering unforgettable culinary experiences.
 
-![About Section](Screenshots/AboutUs.png)
+![About Section](Screenshots/Ourstory.png)
 
 ---
 
@@ -125,7 +125,21 @@ Discover what our customers have to say about their dining experience at Savora.
 ### 🪑 Reservation Section
 Reserve your table effortlessly by filling out the booking form and experience fine dining at Savora.
 
-![Reservation Section](Screenshots/TableReservation.png)
+![Reservation Section](Screenshots/ReserveTable.png)
+
+
+### 📞 Contact Us
+Get in touch with Savora for reservations, inquiries, or special requests. Our contact section provides all the essential details, including phone number, email, address, and business hours, making it easy to connect with us.
+
+![Contact Us](Screenshots/ContactUs.png)
+
+---
+
+### 📍 Location & Map
+Find your way to Savora with the integrated interactive map. Easily locate our restaurant, explore nearby landmarks, and plan your visit for a seamless dining experience.
+
+![Location & Map](Screenshots/Map.png)
+
 
 ---
 
