@@ -119,172 +119,327 @@ body.dark-mode .nav-link.active{
     margin:auto;
     box-shadow:0 8px 20px rgba(0,0,0,.2);
 }
-
 /* ==========================
-   MENU
+   SIGNATURE MENU
 ========================== */
 
-#menu-section{
-    transition:.1s;
-}
-
-/* Light */
+/* Light Mode */
 
 body:not(.dark-mode) #menu-section{
     background:beige;
-    color:#222;
 }
 
-/* Dark */
+body:not(.dark-mode) #menu-section h2{
+    color:#111;
+}
+
+body:not(.dark-mode) #menu-section .text{
+    color:#555;
+}
+
+/* Dark Mode */
 
 body.dark-mode #menu-section{
-    background:#1f1f1f;
-    color:white;
+    background:#121212;
 }
+
+body.dark-mode #menu-section h2{
+    color:#fff;
+}
+
+body.dark-mode #menu-section .text{
+    color:#d4d4d4;
+}
+
+/* Cards */
 
 .menu-card{
     border:none;
     border-radius:18px;
     overflow:hidden;
-    height:100%;
+    background:#2b2b2b;
+    color:#fff;
+    box-shadow:0 10px 25px rgba(0,0,0,.35);
     transition:.35s;
-    box-shadow:0 8px 18px rgba(0,0,0,.2);
+    height:100%;
 }
 
 .menu-card:hover{
-    transform:translateY(-8px);
-    box-shadow:0 15px 30px rgba(0,0,0,.3);
+    transform:translateY(-10px);
+    box-shadow:0 18px 40px rgba(0,0,0,.45);
 }
 
 .menu-card img{
+    width:100%;
     height:220px;
     object-fit:cover;
+    border-bottom:1px solid rgba(255,255,255,.05);
 }
 
 .menu-card .card-body{
     text-align:center;
-    padding:20px;
+    padding:18px;
 }
 
 .menu-card h5{
-    font-weight:bold;
+    color:#fff;
+    font-size:24px;
+    font-weight:700;
 }
 
 .menu-card p{
-    font-size:15px;
-    margin-bottom:12px;
-    min-height:50px;
+    color:#cfcfcf;
 }
 
 .price{
+    color:#ffc107;
     font-size:20px;
     font-weight:bold;
 }
-
-/* Light Cards */
-
-body:not(.dark-mode) .menu-card{
-    background:white;
-    color:#222;
-}
-
-body:not(.dark-mode) .menu-card p{
-    color:#666;
-}
-
-body:not(.dark-mode) .price{
-    color:#ff9800;
-}
-
-/* Dark Cards */
-
-body.dark-mode .menu-card{
-    background:#2d2d2d;
-    color:white;
-}
-
-body.dark-mode .menu-card p{
-    color:#d4d4d4;
-}
-
-body.dark-mode .price{
-    color:#ffc107;
-}
-
-/* ==========================
+/* =========================
    GALLERY
-========================== */
+========================= */
 
 .gallery-img{
     width:100%;
-    aspect-ratio:1/1;
+    height:390px;
     object-fit:cover;
-    border-radius:20px;
-    transition:.4s;
+    border-radius:15px;
+    cursor:pointer;
+    transition:0.3s;
 }
 
 .gallery-img:hover{
     transform:scale(1.05);
 }
 
-/* ==========================
-   TESTIMONIAL
-========================== */
+/* =========================
+   TESTIMONIALS
+========================= */
 
-.carousel-item{
-    text-align:center;
-    padding:40px;
-}
-
-#reviews-section{
-    transition:0.1s;
-}
-
-body:not(.dark-mode) .carousel-item{
+.testimonial-card{
     background:beige;
-    color:#222;
-}
-
-body.dark-mode .carousel-item{
-    background:#121212;
-    color:white;
-}
-
-/* ==========================
-   CONTACT
-========================== */
-
-form{
     max-width:700px;
     margin:auto;
+    padding:40px;
+    border-radius:20px;
 }
 
-form input,
-form textarea{
+.testimonial-card h4{
+    color:#ffc107;
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon{
+    background-color:black;
+    border-radius:50%;
+    padding:15px;
+}
+/* Customer Review Arrows */
+
+#reviews .carousel-control-prev,
+#reviews .carousel-control-next{
+    width:60px;
+}
+
+#reviews .carousel-control-prev-icon,
+#reviews .carousel-control-next-icon{
+    background-color:#ffc107;
+    border-radius:50%;
+    padding:20px;
+}
+
+#reviews .carousel-control-prev:hover .carousel-control-prev-icon,
+#reviews .carousel-control-next:hover .carousel-control-next-icon{
+    background-color:#ff9800;
+}
+/* ==========================================
+   CONTACT SECTION
+========================================== */
+
+/* LIGHT MODE */
+#contact{
+    background:beige;
+    color:#222;
+    padding:90px 0;
+}
+
+.contact-title{
+    font-size:48px;
+    font-weight:700;
+    margin-bottom:10px;
+}
+
+.contact-subtitle{
+    color:#cfcfcf;
+    font-size:18px;
+    margin-bottom:20px;
+}
+
+/* ==========================
+   CONTACT INFO
+========================== */
+
+.contact-info{
+    display:flex;
+    flex-direction:column;
+    gap:25px;
+}
+.info-box p{
+    line-height:1.8;
+    margin:0;
+}
+.info-icon{
+    width:60px;
+    height:60px;
+    background:#ffc107;
+    color:#000;
+    border-radius:50%;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    font-size:24px;
+    flex-shrink:0;
+    transition:.3s;
+}
+
+.info-box:hover .info-icon{
+    transform:rotate(10deg) scale(1.1);
+}
+
+.info-box h4,
+.info-box h5{
+    font-weight:700;
+    margin-bottom:8px;
+}
+
+.info-box p{
+    color:#d4d4d4;
+    line-height:1.8;
+    margin:0;
+}
+
+/* ==========================
+   CONTACT FORM
+========================== */
+
+.contact-card{
+    background:#2b2b2b;
+    border-radius:20px;
+    padding:35px;
+    box-shadow:0 12px 35px rgba(0,0,0,.35);
+}
+
+.contact-card .form-control{
+    background:#1f1f1f;
+    border:1px solid #444;
+    color:#fff;
+    border-radius:12px;
+    padding:15px;
+    transition:.3s;
+}
+
+.contact-card .form-control::placeholder{
+    color:#bdbdbd;
+}
+
+.contact-card .form-control:focus{
+    background:#1f1f1f;
+    color:#fff;
+    border-color:#ffc107;
+    box-shadow:0 0 15px rgba(255,193,7,.35);
+}
+
+textarea.form-control{
+    resize:none;
+}
+
+.contact-btn{
+    background:#ffc107;
+    color:#000;
+    font-weight:600;
+    padding:12px 35px;
     border-radius:10px;
-    padding:12px;
+    transition:.3s;
 }
 
-form button{
-    border-radius:30px;
-    padding:12px 30px;
+.contact-btn:hover{
+    background:#ffb300;
+    transform:translateY(-3px);
+}
+
+/* ==========================
+   MAP
+========================== */
+
+.map-card{
+    margin-top:20px;
+    border-radius:20px;
+    overflow:hidden;
+    box-shadow:0 15px 40px beige;
 }
 
 #map{
     width:100%;
-    height:500px;
-    border-radius:20px;
-    overflow:hidden;
-    box-shadow:0 10px 30px rgba(0,0,0,.2);
+    height:450px;
 }
 
 /* ==========================
-   FOOTER
+   RESPONSIVE
 ========================== */
 
-footer{
-    margin-top:40px;
+@media(max-width:992px){
+
+    .contact-title{
+        font-size:38px;
+    }
+
+    .contact-card{
+        padding:25px;
+    }
+
+    .info-box{
+        margin-bottom:15px;
+    }
+
 }
+
+@media(max-width:768px){
+
+    #contact{
+        padding:70px 0;
+    }
+
+    .contact-title{
+        font-size:34px;
+    }
+
+    .contact-subtitle{
+        font-size:16px;
+    }
+
+    .info-box{
+        flex-direction:row;
+    }
+
+    .info-icon{
+        width:55px;
+        height:55px;
+        font-size:20px;
+    }
+
+    #map{
+        height:300px;
+    }
+
+    .contact-btn{
+        width:100%;
+    }
+
+}         
+/* ==========================
+   FOOTER
+========================== */
 
 footer i{
     font-size:28px;
@@ -304,8 +459,8 @@ body.dark-mode{
     background:#121212;
     color:white;
 }
-
 body.dark-mode #about,
+body.dark-mode #menu-section,
 body.dark-mode #gallery,
 body.dark-mode #contact{
     background:#121212;
@@ -341,4 +496,201 @@ body.dark-mode footer{
     .gallery-img{
         height:220px;
     }
+}
+
+.social-icons a{
+    color:white;
+    font-size:30px;
+    margin:0 12px;
+    transition:.3s;
+    text-decoration:none;
+}
+
+.social-icons a:hover{
+    color:#ffc107;
+}
+
+footer p{
+    margin-bottom:10px;
+}
+/* ---------- LIGHT MODE ---------- */
+
+body:not(.dark-mode) #contact{
+    background:beige;
+    color:#111;
+}
+
+body:not(.dark-mode) .info-box h4,
+body:not(.dark-mode) .info-box h5{
+    color:#111;
+}
+
+body:not(.dark-mode) .info-box p{
+    color:#444;
+}
+
+/* ---------- DARK MODE ---------- */
+
+body.dark-mode #contact{
+    background:#1e1e1e;
+    color:white;
+}
+
+body.dark-mode .info-box h4,
+body.dark-mode .info-box h5{
+    color:white;
+}
+
+body.dark-mode .info-box p{
+    color:#d4d4d4;
+}
+body:not(.dark-mode) .contact-title{
+    color:#111;
+}
+
+body:not(.dark-mode) .contact-subtitle{
+    color:#555;
+}
+
+body.dark-mode .contact-title{
+    color:white;
+}
+
+body.dark-mode .contact-subtitle{
+    color:#d4d4d4;
+}
+
+/* ==========================
+   TABLE RESERVATION
+========================== */
+
+#reservation{
+    padding:90px 0;
+}
+
+/* Light Mode */
+
+body:not(.dark-mode) #reservation{
+    background:#f8f2e8;
+}
+
+body:not(.dark-mode) .reservation-title{
+    color:#111;
+}
+
+body:not(.dark-mode) .reservation-subtitle{
+    color:#555;
+}
+
+/* Dark Mode */
+
+body.dark-mode #reservation{
+    background:#1a1a1a;
+}
+
+body.dark-mode .reservation-title{
+    color:#fff;
+}
+
+body.dark-mode .reservation-subtitle{
+    color:#d4d4d4;
+}
+
+.reservation-title{
+    font-size:46px;
+    font-weight:700;
+}
+
+.reservation-subtitle{
+    margin-top:10px;
+    margin-bottom:40px;
+}
+
+.reservation-card{
+    background:#2b2b2b;
+    padding:40px;
+    border-radius:20px;
+    box-shadow:0 12px 35px rgba(0,0,0,.35);
+}
+
+.reservation-card .form-control,
+.reservation-card .form-select{
+
+    background:#1f1f1f;
+    color:white;
+    border:1px solid #444;
+    border-radius:12px;
+    padding:14px;
+
+}
+
+.reservation-card .form-control:focus,
+.reservation-card .form-select:focus{
+
+    border-color:#ffc107;
+    box-shadow:0 0 12px rgba(255,193,7,.4);
+
+}
+
+.reservation-card textarea{
+
+    resize:none;
+
+}
+
+.reservation-btn{
+
+    background:#ffc107;
+    color:#111;
+    font-size:18px;
+    font-weight:600;
+    padding:14px;
+    border-radius:12px;
+    transition:.3s;
+
+}
+
+.reservation-btn:hover{
+
+    background:#ffb300;
+    transform:translateY(-3px);
+
+}
+/* ==========================
+   RESERVATION INPUT FIX
+========================== */
+
+.reservation-card input,
+.reservation-card textarea,
+.reservation-card select{
+    background:#1f1f1f !important;
+    color:#fff !important;
+    border:1px solid #444 !important;
+}
+
+.reservation-card input::placeholder,
+.reservation-card textarea::placeholder{
+    color:#bdbdbd !important;
+    opacity:1;
+}
+
+.reservation-card select{
+    color:#fff !important;
+}
+
+.reservation-card option{
+    background:#1f1f1f;
+    color:#fff;
+}
+
+/* Date & Time */
+
+.reservation-card input[type="date"],
+.reservation-card input[type="time"]{
+    color:#fff !important;
+}
+
+.reservation-card input[type="date"]::-webkit-calendar-picker-indicator,
+.reservation-card input[type="time"]::-webkit-calendar-picker-indicator{
+    filter:invert(1);
 }
